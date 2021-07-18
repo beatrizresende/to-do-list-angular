@@ -1,4 +1,7 @@
 # ToDoList
+A ToDo List that adds a task and allows to edit and delete it.
+
+With Angular and Bootstrap.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
