@@ -1,0 +1,22 @@
+<div class="default">
+    <h1>TO DO LIST</h1>
+    <div style="display: flex; justify-content: center; margin-top: 27px;">
+    <h4>with Angular</h4>
+</div>
+</div>
+
+<form>
+    <div class="default">
+<input #input class="form-control" type="text" placeholder="Digite a nova tarefa aqui" style="width: 50%;">
+<button #button class="btn btn-success" (click)="createTask(input.value); input.value = ''">Adicionar/Atualizar</button>
+</div>
+</form>
+
+
+<div *ngFor="let task of tasks;">
+    <div class="list">
+        <li>{{task}}</li>
+        <button class="btn btn-primary" (click)="input.value = task; deleteTask(task)">Editar</button>
+        <button class="btn btn-danger" (click)="deleteTask(task)">Deletar</button>
+    </div>
+</div>
